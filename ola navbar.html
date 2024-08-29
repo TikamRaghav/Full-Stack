@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .ola{
+            display: flex;
+            align-items: center;
+            background-color: black;
+            color: white;
+            font-family: helvetica;
+            justify-content: space-between;
+            padding-left:60px;
+            padding-right: 70px;
+            padding-top:20px;
+            padding-bottom: 20px;
+             
+        }
+
+        .ola ul{
+            display: flex;
+            align-items: center;
+            list-style-type: none;
+            gap :75px;
+            font-size: 14px;
+        }
+        .ola img{
+            width: 55px;
+        }
+        .investor ul {
+            display: flex;
+            gap: 55px;
+            font-size: 14px;
+             
+        }
+        .investor i{
+            font-size: 25px;
+        }
+        .scooter i{
+            color: white;
+        }
+        #order{
+            color: rgb(0, 128, 49);
+        }
+        .item{
+            display: none;
+            position: absolute;
+            background-color: white;
+            color: black;
+            width: 120px;
+            padding-left: 10px;
+            margin-top: 13px;
+            line-height: 30px;
+        }
+        .product{
+            display: none;
+            position: absolute;
+            background-color: white;
+            color: black;
+            width: 150px;
+            padding-left: 10px;
+            margin-top: 13px;
+            line-height: 30px;
+        }
+        .scooter :hover i{
+            rotate: 180deg;
+
+        }
+        .bike :hover i {
+            rotate: 180deg;
+        }
+        .scooter:hover .item{
+            display: block;
+        }
+        .bike:hover .product {
+            display: block;
+        }
+        .scooter li{
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        .bike li {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        
+        }
+
+
+        
+
+
+    </style>
+</head>
+<body>
+    <div class="ola">
+        <div class="olatag">
+            <ul>
+                <li><img src="https://cdn.olaelectric.com/ev-discovery-platform/images/ola-logo-13042023.svg" alt=""></li>
+                <li>Offers</li>
+                <div class="scooter"> <li>Scooters<i class='bx bx-chevron-down'></i></li>
+                    <div class="item">
+                        <p>S1 pro</p>
+                        <p>S1 air</p>
+                        <p>S1 X</p>
+                    </div>
+                </div>
+               
+                <div class="bike"><li>Mortorcycles<i class='bx bx-chevron-down'></i></li>
+                    <div class="product">
+                    <p>Roadster x</p>
+                    <p>Roadster Pro</p>
+                    <p>Roadster</p>
+                </div>
+                </div>
+            </ul>
+        
+        </div>
+       
+        <div class="investor">
+            <ul>
+                <li>Investor Relations</li>
+                <li>Test Ride</li>
+                <li id="order">Order now</li>
+                <li><i class='bx bx-menu'></i></li>
+
+            </ul>
+        </div>
+    </div>
+</div>
+</body>
+</html>
