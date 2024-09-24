@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: roboto;
+    text-decoration: none;
+    overflow-x: hidden;
+}
+.subway{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.subway img{
+    width: 140px;
+    height: 94px;
+}
+.subway ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 40px;
+    color: #008938;
+
+}
+#talk{
+    border: 12px solid green;
+    background-color: green;
+    color:white;
+    border-radius: 5px;
+    
+}
+.about{
+    display: flex;
+    gap: 150px;
+    padding-left: 130px;
+    background-color: #ededed;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.content{
+    font-size: 16px;
+    font-family: roboto;
+   
+}
+.content p{
+    letter-spacing: .525px;
+    line-height: 24px;
+    padding-bottom: 30px;
+    color: #008938;
+}
+
+.futter{
+    background-color:#008938;
+    color: white;
+    font-family: Roboto,sans-serif;
+    
+    padding: 30px;
+    line-height: 25px;
+    margin-top: 50px;  
+    
+}
+
+.myfooter{
+    display: flex;
+    justify-content: space-between;
+}
+
+.futter ul{
+    list-style-type: none;
+}
+.address{
+    
+    background-color: #008938;
+    color: white;
+    text-align: center;
+    font-weight: bold; 
+    border-top: 2px solid white;
+    padding-top: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+
+}
+.yellow{
+    color: #f2b700;
+}
+.mymenu{
+    display: none;
+}
+
+/* media quary */
+@media screen and (max-width: 1024px){
+    .subway{
+        padding: 5px;
+        height: 60px;
+       }
+    .home{
+        display: none;
+        
+
+    }
+    .mymenu{
+        display: block;
+    }
+    .about{
+        padding-left: 10px;
+    }
+    .myfooter{
+        flex-wrap: wrap;
+        font-size: 12px;
+       }
+       .address{
+        font-size: 10px;
+        line-height: 10px;
+        margin-left: 0;
+       }
+       .address p{
+        padding-bottom: 20px;
+        text-align: left;
+       }
+
+}

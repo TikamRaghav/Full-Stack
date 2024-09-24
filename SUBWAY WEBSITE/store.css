@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: roboto;
+    text-decoration: none;
+    overflow-x: hidden;
+
+}
+
+.subway{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+
+
+}
+
+.subway img{
+    width: 140px;
+    height: 94px;
+
+}
+
+.subway ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 40px;
+    color: #008938;
+
+}
+#talk{
+    border: 12px solid green;
+    background-color: green;
+    color:white;
+    border-radius: 5px;
+    
+}
+.store{
+    background-color: #008938;
+    color: white;
+    margin-left: 150px;
+    margin-right: 150px;
+    padding: 30px;
+
+    
+}
+.form{
+    display: flex;
+    gap: 40px;
+   
+}
+.store select{
+    border-radius: 5px;
+}
+.please{
+
+    align-items: center;
+    justify-content: center;
+    padding-left: 550px;
+    padding-top: 100px;
+    font-size: 25px;
+}
+.pic{
+    padding-left: 430px;
+}
+
+.futter{
+    background-color:#008938;
+    color: white;
+    font-family: Roboto,sans-serif;
+    
+    padding: 30px;
+    line-height: 25px;
+    margin-top: 50px;  
+    
+}
+
+.myfooter{
+    display: flex;
+    justify-content: space-between;
+}
+
+.futter ul{
+    list-style-type: none;
+}
+.address{
+    
+    background-color: #008938;
+    color: white;
+    text-align: center;
+    font-weight: bold; 
+    border-top: 2px solid white;
+    padding-top: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+
+}
+.yellow{
+    color: #f2b700;
+}
+.mymenu{
+    display: none;
+}
+
+
+/* media quary */
+
+@media screen and (max-width:1024px) {
+    .subway{
+        padding-left: 5px;
+    
+    }
+    .home{
+        display: none;
+    }
+
+.mymenu{
+    display: block;
+}
+.form{
+    flex-wrap: wrap;
+    font-size: 5px;
+}
+.store{
+    width: 100%;
+    margin-left: 0px;
+}
+.myfooter{
+    flex-wrap: wrap;
+    font-size: 12px;
+}
+.address p {
+    font-size: 10px;
+    text-align: left;
+    padding-bottom: 10px;
+
+}
+.address{
+    margin-left: 0;
+}
+    
+}

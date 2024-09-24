@@ -1,0 +1,348 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: roboto;
+    overflow-x: hidden;
+    text-decoration: none;
+}
+
+.subway{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.subway img{
+    width: 140px;
+    height: 94px;
+}
+.subway ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 40px;
+
+}
+#talk{
+    border: 12px solid green;
+    background-color: green;
+    color:white;
+    border-radius: 5px;
+    
+}
+.burgergrid{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    grid-template-rows: repeat(2,auto);
+    justify-content: center;
+    gap: 100px;
+    padding-top: 50px;
+    color: white;
+}
+.grid1{
+    background-image: url('https://subway.in/static/media/GrillsBG.663d1bcd8eb76f4ea275.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.image1 img{
+    width: 800px;
+    height: 296px;
+    padding-top: 45px;
+    padding-left: 60px;
+}
+.chef {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+ 
+}
+.grid2{
+    padding: 70px;
+    
+    
+}
+.chilligrid{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    grid-template-rows: repeat(2,auto);
+    justify-content: center;
+    gap: 160px;
+    padding-right: 160px;
+    
+    
+}
+.chilligrid img{
+    width: 100%;
+    height: auto;
+  
+
+
+}
+.chilli{
+    border: 1px solid rgb(223, 220, 220);
+    border-radius: 35px;
+}
+.chilli h2{
+    padding: 15px;
+}
+.more{ 
+    display: flex;
+    justify-content: center;
+    
+
+
+}
+.create, .salad, .treats{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #008045;
+    color: white;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-bottom: 1px solid white;
+    height: 100px;
+    
+}
+.picture{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+.veggie{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.bxs-up-arrow{
+    font-size: 30px;
+
+}
+.create2{
+    display: none;
+}
+@keyframes rotate{
+    from{rotate: 0deg;}
+    to{rotate:  180deg;}
+}
+.icon{
+    animation: rotate 0.5s 1;
+    
+    
+}
+.space{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+  
+}
+
+.space1{
+    border-top: 1px solid white;
+    padding-bottom: 50px;
+    background-color: #008045;
+    height: 100px;
+}
+.intro1{
+    font-size: 48px;
+    padding-left: 70px;
+    font-family: helvetica;
+    color: #008045;
+
+}
+.intro{
+    height: 1100px;
+}
+.cri{
+    font-size: 88px;
+    padding-left: 72px;
+    font-family: helvetica;
+    color: #008045;
+    padding-top: 30px;
+}
+.intro img{
+    position: absolute;
+    margin-left: 400px;
+    margin-top: -200px;
+    
+    
+    
+}
+.futter{
+    background-color:#008938;
+    color: white;
+    font-family: Roboto,sans-serif;
+    
+    padding: 30px;
+    line-height: 25px;
+    margin-top: 50px;  
+    
+}
+
+.myfooter{
+    display: flex;
+    justify-content: space-between;
+}
+
+.futter ul{
+    list-style-type: none;
+}
+.address{
+    
+    background-color: #008938;
+    color: white;
+    text-align: center;
+    font-weight: bold; 
+    border-top: 2px solid white;
+    padding-top: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+
+}
+.yellow{
+    color: #f2b700;
+}
+.chilli img{
+    width: 100%;
+    height: auto;
+}
+.mymenu{
+    display: none;
+}
+
+
+
+@media screen and (max-width:1024px){
+    .home li{
+        display: none;
+    }
+    .menu{
+        display: block;
+        border-radius: 100px;
+    }
+   
+    
+   .subway{
+    padding: 5px;
+    height: 60px;
+   }
+    .home img{
+        display: block;
+    }
+    .burgergrid{
+        grid-template-columns: repeat(2,auto);
+        grid-template-rows: repeat(3,auto);
+        overflow-x: hidden;
+        padding: 15px;
+        font-size: 10px;
+        
+    }
+    .bombay img{
+        width: 100%;
+        height: auto;
+        
+    }
+    .grid1{
+        background-position: top center;
+        background-size: cover;
+        overflow-x: hidden;
+        
+    }
+    .intro{
+        height: 600px;
+    }
+    .image1 img{
+        width: 100%;
+        height: auto;
+        padding-left: 15px;
+    }
+    .intro img{
+        right: 0px;
+        margin-top: 40px;
+       
+        height: 400px;
+    }
+    .intro1{
+        font-size: 40px;
+        padding-left: 10px;
+    }
+    .cri{
+        font-size: 60px;
+        padding-left: 10px;
+    }
+    .chilligrid{
+        grid-template-columns: repeat(2,auto);
+        grid-template-rows: repeat(3,auto);
+    }
+    .grid2 img{
+        width: 100%;
+        height: auto;
+    }
+   
+    .chilli img{
+        width: 100%;
+        height: auto;
+    }
+    .craving h1{
+        font-size: 20px;
+    }
+    .craving i{
+        font-size: 10px;
+    }
+    .craving div{
+        gap: 50px;
+        padding: 10px;
+        align-items: center;
+        
+    }
+    .space{
+        font-size: 6px;
+        gap: 5px;
+    }
+    .space img{
+        width: 13px;
+        height: 16px;
+    }
+   .myfooter{
+    flex-wrap: wrap;
+   }
+   .address p{
+    font-size: 10px;
+    line-height: 10px;
+    margin-left: 0;
+    padding-left: 0;
+    padding-bottom: 20px;
+    text-align: left;
+   }
+   .address{
+    margin-top: 20px; 
+    margin-left: 0;
+   }
+   .chilligrid{
+    padding-right: 0px;
+    gap: 50px;
+    
+    
+   
+   }
+   .chilli{
+    border-radius: 5px;
+    width: 100%;
+   }
+   .chilli h2{
+    font-size: 8px;
+   }
+   .mymenu{
+    display: block;
+   }
+   
+    
+}
+
+
+

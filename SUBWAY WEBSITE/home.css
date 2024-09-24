@@ -1,0 +1,185 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: roboto;
+    text-decoration: none;
+    overflow-x: hidden;
+}
+.subway{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+
+   
+}
+.subway img{
+    width: 140px;
+    height: 94px;
+}
+.subway ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 40px;
+    color: #008938;
+
+}
+
+.burger{
+    background-image: url('https://subway.in/static/media/home-img.b9f002c87c9b2888dfe4.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 800px;
+    width: 100%;
+}
+.pic img{
+    width: 400px;
+    height: 286px;
+}
+.pic{
+    padding-top: 50px;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    color: white;
+    padding-top: 40px;
+ 
+}
+.content img{
+    width: 148px;
+    height: 37px;
+}
+.pic,.content{
+    padding-left: 120px;
+}
+#talk{
+    border: 12px solid green;
+    background-color: green;
+    color:white;
+    border-radius: 5px;
+    
+}
+#h{
+    color: red;
+}
+.video{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+   
+
+}
+.video iframe{
+    border-radius: 30px;
+}
+.futter{
+    background-color:#008938;
+    color: white;
+    font-family: Roboto,sans-serif;
+    
+    padding: 30px;
+    line-height: 25px;
+    margin-top: 50px;  
+    
+}
+.myfooter{
+    display: flex;
+    justify-content: space-between;
+}
+
+.futter ul{
+    list-style-type: none;
+}
+.address{
+    
+    background-color: #008938;
+    color: white;
+    text-align: center;
+    font-weight: bold; 
+    border-top: 2px solid white;
+    padding-top: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+
+}
+.home i{
+    display: none;
+    font-size: 50px;
+    color: silver;
+}
+.home img{
+    width: 50px;
+    height: 50px;
+    display: none;
+}
+.yellow{
+    color: #f2b700;
+}
+.mymenu{
+    display: none;
+}
+/* media queri */
+     
+@media screen and (max-width:1018px){
+    .subway{
+        padding: 5px;
+        height: 60px;
+       }
+    .home{
+        display: none;
+        
+
+    }
+    .mymenu{
+        display: block;
+    }
+    .home img{
+        display: block;
+    }
+    .burger{
+        height: 650px;
+        
+        background-size: cover;
+        overflow: hidden;
+        background-position: top center;
+    }
+    .pic img{
+        width: 200px;
+        height: auto;
+    }
+    .pic{
+        padding-left: 30px;
+    }
+    .content{
+        padding-left: 30px;
+    }
+    .video iframe{
+        width: 100%;
+
+        height: 230px 
+    }
+    .video{
+        padding: 20px;
+    }
+   .myfooter{
+    flex-wrap: wrap;
+    font-size: 12px;
+   }
+   .address{
+    font-size: 10px;
+    line-height: 10px;
+    margin-left: 0;
+   }
+   .address p{
+    padding-bottom: 20px;
+    text-align: left;
+   }
+
+}
+/* media query */

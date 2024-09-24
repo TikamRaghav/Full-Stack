@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: roboto;
+    text-decoration: none;
+    overflow-x: hidden;
+
+}
+
+.subway{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+
+}
+
+.subway img{
+    width: 140px;
+    height: 94px;
+
+}
+
+.subway ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 40px;
+    color: #008938;
+
+}
+#talk{
+    border: 12px solid green;
+    background-color: green;
+    color:white;
+    border-radius: 5px;
+    
+}
+.talk{
+  padding-left: 500px;
+}
+.last{
+    padding-left:70px;
+    padding-right: 280px; 
+    background-color: #008938;
+    color: white;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-size:13px;
+    font-family: helvetica;
+}
+.pic img{
+  position: absolute;
+  right: 0;
+  margin-top: -40px;
+  margin-right: 90px;
+  width: 80px;
+    
+    
+    
+}
+.file{
+    border: 1px solid black;
+    width: 280px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    
+}
+input[type=file]{
+    width: 200px;
+}
+.mymenu{
+    display: none;
+}
+
+/* media query */
+
+@media screen and (max-width:1024px) {
+    .subway{
+        padding-left: 5px;
+        
+    }
+    .home{
+        display: none;
+    }
+    .mymenu{
+        display: block;
+    }
+    .talk{
+     padding-left: 5px;
+
+    }
+    .pic p{
+        flex-wrap: wrap;
+        
+
+    }
+    .last{
+        padding-right:10px;
+        padding-left: 10px;
+    }
+    
+}
