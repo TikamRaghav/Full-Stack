@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gmail</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hina+Mincho&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: google sans, roboto, noto sans;
+        }
+        .container{
+            display: flex;
+           
+            
+           
+            width: 995px;
+            height: 402px;
+            background-color: white;
+            border-radius: 30px;
+            padding: 30px;
+            justify-content: space-between;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100vh;
+            background-color: #f0f4f9;
+        }
+        .logo img{
+            width: 30px;
+            height: 30px;
+        }
+        .container2 input{
+            width: 435px;
+            height: 54px;
+            border-radius: 5px;
+            border: 1px solid black;
+        }
+        .container2{
+            display: flex;
+            
+          padding-top: 70px;
+            flex-direction: column;
+            row-gap: 40px;
+        }
+        .container1{
+            width: 435px;
+            display: flex;
+            flex-direction: column;
+            row-gap: 20px;
+        }
+        ::placeholder{
+            padding: 13px 15px;
+            font-size: 16px;
+        }
+        .create{
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            gap: 25px;
+        }
+        #b1{
+            border: none;
+            color: blue;
+            background-color: white;
+            font-size: 14px;
+            border-radius: 50px;
+            width: 150px;
+            height: 40px;
+        }
+        #b2{
+            width: 100px;
+            height: 40px;
+            border-radius: 50px;
+            background-color: #0b57d0;
+            border: none;
+            color: white;
+        }
+        .signin h1{
+            font-size: 36px;
+            font-weight: normal;
+        }
+        .container1 img{
+            font-size: 16px;
+        }
+        .email p{
+            color: #0b57d0;
+        }
+        #learn{
+            color: #0b57d0;
+        }
+        #b1:hover{
+            background-color: rgb(184, 198, 202);
+        }
+        .email{
+            line-height: 30px;
+        }
+        @media screen and (max-width:999px) {
+            .container{
+             
+                
+                overflow: hidden;
+                width: auto;
+            }
+            
+           .container2{
+            width: auto;
+           }
+          
+           @media screen and (max-width:678px){
+            .container{
+                flex-wrap: wrap;
+                width: auto;
+                overflow: hidden;
+                height: auto;
+            }
+            .container2 div{
+                flex-wrap: wrap;
+            }
+           }
+           @media screen and (max-width:473px){
+            .container2 input{
+                width: 380px;
+            }
+           }
+          
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="container1">
+            <div class="logo">
+                <img src="https://cdn-icons-png.flaticon.com/128/281/281764.png" alt="">
+            </div>
+            <div class="sign">
+                <h1>Sign in</h1>
+           </div>
+            <p>to continue to Gmail</p>
+        </div>
+      
+        <div class="container2">
+            <div class="email">
+                <input type="text" placeholder="Email or phone">
+                <p>Forgot email?</p>
+            </div>
+            <div class="content">
+                <p>Not your computer? Use guest mode to sign in Privately.</p>
+                <p id="learn">Learn more about using Guest mode</p>
+            </div>
+            <div class="create">
+                <button id="b1">Create account</button>
+                <button id="b2">Next</button>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
