@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        input:focus{
+            outline: none;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100vh;
+        }
+        .measure{
+            display: flex;
+            gap: 50px;
+            justify-content: center;
+        }
+        .logo img{
+            width: 100px;
+            height: 80px;
+        }
+        .content1 {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            background-color: rgb(221, 37, 221);
+            padding: 30px;
+            color: white;
+            border-radius: 30px 30px 0px 0px;
+        }
+        .bmi{
+            
+           border: 1px solid black;
+           border-radius: 30px;
+           height: 500px;
+           
+           
+        }
+        .measure input{
+            width: 100px;
+            height: 40px;
+            border: none;
+            border-bottom: 1px solid rgb(214, 36, 214);
+            font-size: 30px;
+            text-align: center;
+        }
+        .button{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+        }
+        .button button{
+            width: 110px;
+            height: 30px;
+            border: 1px solid rgb(197, 38, 197);
+            background-color: rgb(250, 235, 250);
+            color: rgb(135, 29, 135);
+            font-weight: bold;
+        }
+        .colorbar{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .blue{
+            height: 5px;
+            width: 80px;
+            background-color: skyblue;
+        }
+        .green{
+            height: 5px;
+            width: 80px;
+            background-color: rgb(53, 216, 58);
+        }
+        .yellow{
+            height: 5px;
+            width: 80px;
+            background-color: rgb(231, 228, 23);
+        }
+        .red{
+            height: 5px;
+            width: 80px;
+            background-color: rgb(217, 45, 43);
+        }
+        .result{
+            
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .content2{
+            line-height: 50px;
+            padding-top: 40px;
+        }
+      
+           
+        
+
+    </style>
+    <script>
+        function bmi(){
+            var h = parseInt(document.getElementById('h').value);
+            var height = h/100;
+            var w = parseInt(document.getElementById('w').value);
+            var bmi = w/(height*height);
+            document.getElementById("result").innerHTML =  Math.round(bmi);
+            if(bmi>25){
+                document.getElementById("result").innerHTML = "Overweight";
+            }
+            else if(bmi<18){
+                document.getElementById("result2").innerHTML = "Underweight";
+            }
+            else{
+                document.getElementById("result2").innerHTML = "Healthy";
+            }
+        }
+        function reset(){
+            document.getElementById("result").value = '';
+        }
+    </script>
+</head>
+<body>
+    <div class="bmi">
+        <div class="content1">
+            <div class="logo">
+                <img src="https://img.freepik.com/free-vector/flat-woman-diet-control-normal-weight-with-bmi-scale_88138-933.jpg" alt="">
+            </div>
+            <div class="title">
+                <h1>BMI Calculator for Adults</h1>
+            </div>
+        </div>
+        <div class="content2">
+            <div class="measure">
+                <div class="height">
+                    <div class="h">
+                        <input type="number" id="h">
+                    </div>
+                    <div class="cm">
+                        <h3>Height(cm):</h3>
+                    </div>
+                </div>
+                <div class="weight">
+                    <div class="w">
+                        <input type="number" id="w">
+                    </div>
+                    <div class="kg">
+                        <h3>Weight(kg):</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="button">
+                <div class="reset">
+                    <button onclick="reset()">Reset</button> 
+                </div>
+                <div class="calculate">
+                    <button onclick="bmi()">Calculate</button>
+                </div>
+            </div>
+            <div class="result">
+
+                <div class="calculation"><h1 id="result"></h1></div>
+                <div class="check"><h1 id="result2"></h1></div>
+                
+
+            </div>
+            <div class="colorbar">
+                <div class="blue"></div>
+                <div class="green"></div>
+                <div class="yellow"></div>
+                <div class="red"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
