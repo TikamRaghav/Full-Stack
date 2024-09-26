@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100vh;
+        }
+        .Calculator button{
+            width: 100px;
+            height: 55px;
+            background-color: rgb(59, 166, 59);
+            border: none;
+            color: white;
+            font-size: 25px;
+            border-radius: 5px;
+            
+        }
+        .Calculator input{
+            width: 300px;
+            height: 50px;
+            border: 3px solid black;
+            font-size: 25px;
+        }
+        .Calculator{
+            border: 1px solid black;
+            border-radius: 10px;
+            padding: 10px;
+            line-height: 60px;
+        }
+        .screen{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 5px;
+            padding-bottom: 5px;
+        }
+    </style>
+    <script>
+        function display(val){
+            document.getElementById("display").value += val;
+        }
+        function result(){
+            var x = document.getElementById("display").value;
+            var y  = eval(x);
+            document.getElementById("display").value = y;
+        }
+        function clear(){
+            document.getElementById("display").value = " ";
+        }
+    </script>
+</head>
+<body>
+    <div class="Calculator">
+        <div class="screen">
+            <input type="text" id="display">
+            <button onclick="clear()">C</button>
+        </div>
+        <div class="one">
+            <button onclick="display('1')">1</button>
+            <button onclick="display('2')">2</button>
+            <button onclick="display('3')">3</button>
+            <button onclick="display('/')">/</button>
+        </div>
+        <div class="four">
+            <button onclick="display('4')">4</button>
+            <button onclick="display('5')">5</button>
+            <button onclick="display('6')">6</button>
+            <button onclick="display('*')">*</button>
+        </div>
+        <div class="seven">
+            <button onclick="display('7')">7</button>
+            <button onclick="display('8')">8</button>
+            <button onclick="display('9')">9</button>
+            <button onclick="display('-')">-</button>
+        </div>
+        <div class="zero">
+            <button onclick="display('0')">0</button>
+            <button onclick="display('.')">.</button>
+            <button onclick="result()">=</button>
+            <button onclick="display('+')">+</button>
+        </div>
+
+    </div>
+</body>
+</html>
