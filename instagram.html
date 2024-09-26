@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            row-gap: 15px;
+            padding: 15px;
+            
+        }
+        .icons img{
+           width: 134px;
+           height: 40px;
+
+        }
+        .div1{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid rgb(216, 213, 213 );
+            row-gap: 20px;
+            padding: 40px;
+            
+            
+        }
+        .logo{
+            background-image: url('https://static.cdninstagram.com/rsrc.php/v3/yM/r/8n91YnfPq0s.png');
+            background-repeat: no-repeat;
+            width: 175px;
+            height: 51px;
+            background-size: auto;
+            background-position: 0px -52px;
+            
+        
+        }
+        .div1 input{
+            width: 258px;
+            height: 36px;
+            border-radius: 5px;
+            border: 1px solid rgb(185, 184, 184);
+            background-color: rgb(255, 252, 252);
+        }
+        .app{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            row-gap: 10px;
+        }
+        .login button{
+            width: 258px;
+            height: 36px;
+            background-color: rgb(40, 193, 231);
+            color: white;
+            border: none;
+            border-radius: 10px;
+        }
+       ::placeholder{
+        padding-left: 10px;
+       }
+       .div2{
+        border: 1px solid rgb(221, 218, 218);
+        padding: 15px 69px 15px 69px;
+        
+       }
+       .facebook img{
+        width: 25px;
+        height: 25px;
+       }
+       .facebook{
+        display: flex;
+        align-items: center;
+       }
+       .or{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+       }
+       .line{
+        width: 110px;
+        height: 1px;
+        background-color: silver;
+       }
+       .box{
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+       }
+       .footer ul{
+        display: flex;
+        list-style-type: none;
+        gap: 15px;
+        align-items: center;
+        font-size: 13px;
+        color: rgb(94, 93, 93);
+        flex-wrap: wrap;
+        justify-content: center;
+       }
+       .footer{
+        padding-top: 60px;
+       }
+       .f2 ul{
+        display: flex;
+        gap: 20px;
+        list-style-type: none;
+        font-size: 13px;
+        align-items: center;
+       }
+       .f2 img{
+        width: 10px;
+        height: 10px;
+       }
+       #signup{
+        color: rgb(40, 147, 209);
+       }
+    </style>
+</head>
+<body>
+    <div class="instagram">
+        <div class="div1">
+            <div class="logo">
+
+            </div>
+            <div class="box">
+            <div class="phone">
+                <input type="text" placeholder="Phone number, username, or email">
+            </div>
+            <div class="password">
+                <input type="password" placeholder="password">
+            </div>
+        </div>
+            <div class="login">
+                <button>Log in</button>
+            </div>
+            <div class="or">
+                <div class="line"></div> OR <div class="line"></div>
+            </div>
+            <div class="facebook">
+                
+                    <img src="https://i.pinimg.com/736x/ac/57/3b/ac573b439cde3dec8ca1c6739ae7f628.jpg" alt="">
+                    <p>Login With Facebook</p>
+                
+            </div>
+            <div class="forgot">
+                <p>Forgot password?</p>
+            </div>
+        </div>
+        </div>
+        <div class="div2">
+            <p>Don't have an account? <span id="signup">Sign up</span></p>
+        </div>
+        <div class="app">
+            <div class="get">
+                <p>Get the app.</p>
+            </div>
+            <div class="icons">
+                <img src="https://static.cdninstagram.com/rsrc.php/v3/yz/r/c5Rp7Ym-Klz.png" alt="">
+                <img src="https://static.cdninstagram.com/rsrc.php/v3/yu/r/EHY6QnZYdNX.png" alt="">
+            </div>
+        </div>
+        <div class="footer">
+            <ul>
+                <li>Meta</li>
+                <li>About</li>
+                <li>Blog</li>
+                <li>Jobs</li>
+                <li>Help</li>
+                <li>API</li>
+                <li>Privacy</li>
+                <li>Terms</li>
+                <li>Locations</li>
+                <li>Instagram Lite</li>
+                <li>Threads</li>
+                <li>Contact Uploading & Non-Users</li>
+                <li>Meta Verified</li>
+            </ul>
+        </div>
+        <div class="f2">
+            <ul>
+                <li>English <img src="https://cdn-icons-png.flaticon.com/128/32/32195.png" alt=""></li>
+                <li>&copy 2024 Instagram from Meta</li>
+            </ul>
+        </div>
+
+    
+    
+</body>
+</html>
