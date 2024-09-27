@@ -6,92 +6,140 @@
     <title>Document</title>
     <style>
         *{
-            margin:0;
-            padding:0;
+            margin: 0;
+            padding: 0;
             box-sizing: border-box;
         }
         body{
             display: flex;
+            width: 100%;
             justify-content: center;
             align-items: center;
-            width: 100%;
             height: 100vh;
         }
-        .Calculator button{
-            width: 100px;
-            height: 55px;
-            background-color: rgb(59, 166, 59);
-            border: none;
-            color: white;
-            font-size: 25px;
-            border-radius: 5px;
-            
+        .calculator button{
+            width: 80px;
+            height: 60px;
+            border: 1px solid black;
+            border-radius: 20px;
+            font-size: 30px;
+            background-color: ;
         }
-        .Calculator input{
-            width: 300px;
-            height: 50px;
-            border: 3px solid black;
-            font-size: 25px;
+        .calculator{
+            border: 1px solid black;
+            padding: 30px;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            background-color: rgb(45, 42, 42);
+           
         }
-        .Calculator{
+        .calculator input{
+            width: 330px;
+            height: 70px;
+            font-size: 70px;
             border: 1px solid black;
             border-radius: 10px;
-            padding: 10px;
-            line-height: 60px;
+            font-family: digital-7;
+            background-color: silver;
         }
-        .screen{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 5px;
-            padding-bottom: 5px;
+        .yellow{
+            background-color: rgb(255, 166, 0);
+            color: white;
         }
+        
     </style>
     <script>
-        function display(val){
-            document.getElementById("display").value += val;
+        function seven(){
+            document.getElementById("screen").value += "7";
         }
-        function result(){
-            var x = document.getElementById("display").value;
-            var y  = eval(x);
-            document.getElementById("display").value = y;
+        function multiply(){
+            document.getElementById("screen").value += "*";
         }
-        function clear(){
-            document.getElementById("display").value = " ";
+        function eight(){
+            document.getElementById("screen").value += "8";
         }
+        function equal(){
+            let a = document.getElementById("screen").value;
+            document.getElementById("screen").value = eval(a);
+        }
+        function nine(){
+            document.getElementById("screen").value += "9";
+        }
+        function four(){
+            document.getElementById("screen").value+="4";
+        }
+        function five(){
+            document.getElementById("screen").value+="5";
+        }
+        function six(){
+            document.getElementById("screen").value+="6";
+        }
+        function divide(){
+           document.getElementById("screen").value+="/";
+            
+        }
+        function one(){
+            document.getElementById("screen").value+="1";
+
+        }
+
+        function two(){
+            document.getElementById("screen").value+="2";
+        }
+        function three (){
+            document.getElementById("screen").value+="3";
+
+        }
+        function minus(){
+            document.getElementById("screen").value+="-";
+        }
+        function zero(){
+            document.getElementById("screen").value+="0";
+
+        }
+        function point(){
+            document.getElementById("screen").value+=".";
+        }
+        function plus(){
+            document.getElementById("screen").value+="+";
+        }
+
+    
     </script>
 </head>
 <body>
-    <div class="Calculator">
-        <div class="screen">
-            <input type="text" id="display">
-            <button onclick="clear()">C</button>
-        </div>
-        <div class="one">
-            <button onclick="display('1')">1</button>
-            <button onclick="display('2')">2</button>
-            <button onclick="display('3')">3</button>
-            <button onclick="display('/')">/</button>
-        </div>
-        <div class="four">
-            <button onclick="display('4')">4</button>
-            <button onclick="display('5')">5</button>
-            <button onclick="display('6')">6</button>
-            <button onclick="display('*')">*</button>
-        </div>
-        <div class="seven">
-            <button onclick="display('7')">7</button>
-            <button onclick="display('8')">8</button>
-            <button onclick="display('9')">9</button>
-            <button onclick="display('-')">-</button>
-        </div>
-        <div class="zero">
-            <button onclick="display('0')">0</button>
-            <button onclick="display('.')">.</button>
-            <button onclick="result()">=</button>
-            <button onclick="display('+')">+</button>
-        </div>
 
+    <div class="calculator">
+       <div class="screen">
+        <input type="text" id="screen">
+       </div>
+       <div class="button1">
+        <button onclick="seven()">7</button>
+        <button onclick="eight()">8</button>
+        <button onclick="nine()">9</button>
+        <button onclick="multiply()">X</button>
+       </div>
+       <div class="button1">
+        <button onclick="four()">4</button>
+        <button onclick="five()">5</button>
+        <button onclick="six()">6</button>
+        <button onclick="divide()">÷</button>
+       </div>
+       <div class="button1">
+        <button onclick="one()">1</button>
+        <button onclick="two()">2</button>
+        <button onclick="three()">3</button>
+        <button onclick="minus()">-</button>
+       </div>
+       <div class="button1">
+        <button onclick="zero()">0</button>
+        <button onclick="point()">.</button>
+        <button class="yellow" onclick="equal()">=</button>
+        <button class="yellow" onclick="plus()">+</button>
+       </div>
     </div>
+    
 </body>
 </html>
