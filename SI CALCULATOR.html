@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> <script>
+        function amount(){
+            let p=parseFloat(document.getElementById("amount1").value);
+            let r=parseFloat(document.getElementById("amount2").value);
+            let t=parseFloat(document.getElementById("amount3").value);
+            let amount = p*r*t/100;
+            document.getElementById("result").innerHTML=amount+ p;
+        }
+    </script>
+</head> <style> 
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100vh;
+    }
+
+    .loan{
+        border: 2px solid silver;
+        padding: 30px;
+        border-radius: 10px;
+        font-family: helvetica;
+        display: flex;
+        flex-direction: column;
+        background-color: silver;
+        font-size: large;
+
+
+        ::placeholder{
+            font-size: large;
+        }
+        
+    
+
+    }
+        
+    #button{
+        width: 400px;
+        height: 38px;
+        border-radius: 5px;
+        background-color: rgb(0, 140, 255);
+        color: white;
+        border: 1px solid silver;
+        font-size: large;
+
+    }
+    #personal{
+        padding-bottom: 30px;
+        display: flex;
+        justify-content: center;
+    }
+    input{
+        border:1px solid silver;
+        width: 400px;
+        height: 40px;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    #result{
+        text-align: center;
+        padding-top: 10px;
+        color: green;
+
+    }
+    
+</style>
+<body>
+  <div class="loan">
+    <h2 id="personal">SIMPLE INTREST CALCULATOR</h2>
+    Loan Amount: <br> 
+    <input type="text" placeholder="Enter loan amount" id="amount1"> <br> <br>
+    Interest Rate(%): <br>
+    <input type="text" placeholder="Enter interest rate" id="amount2" > <br> <br>
+    Loan Term (years): <br>
+    <input type="text" placeholder="Enter loan term in years" id="amount3"> <br> <br>
+    <button id="button" onclick="amount()">Calculator Repayment</button>
+    <h1 id="result"></h1>
+
+  </div>  
+    
+</body>
+</html>
