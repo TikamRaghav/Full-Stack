@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function area (){
+            let r = parseFloat(document.getElementById("radius").value);
+            let area = 3.14*r*r ;
+            document.getElementById("result").innerHTML = area;
+                }
+
+                function volume (){
+                    let r = parseFloat(document.getElementById("radius1").value);
+                    let h = parseFloat(document.getElementById("height").value);
+                    let volume = 1/3*3.14*r*r*h;
+                    document.getElementById("result1").innerHTML= volume;
+                }
+     function evenodd (){
+        let num = parseFloat(document.getElementById("num").value);
+        if (num%2==0) { 
+        document.getElementById("result2").innerHTML = num + " IS Even";
+        }
+        else {
+    document.getElementById("result2").innerHTML = num + " IS Odd";
+     }
+     }
+
+     function large (){
+        let num1 = parseFloat(document.getElementById("num1").value);
+        let num2 = parseFloat(document.getElementById("num2").value);
+        if (num1>num2) {
+            document.getElementById("result3").innerHTML = num1 + "is Greater";
+        }
+        else {
+            document.getElementById("result3").innerHTML = num2+ "is Greater";
+        }
+     }
+
+     function age (){
+    let age = parseFloat(document.getElementById("age").value);
+
+    if (age>25) {
+   
+    document.getElementById("result4").innerHTML=age +"OVERAGE";
+}
+else if (age<18) {
+
+
+document.getElementById("result4").innerHTML= age + "under age";
+}
+else {
+    document.getElementById("result4").innerHTML= age +"ELIGIBLE";
+}
+
+     }
+
+     function dom() {
+        document.getElementById("hlo").style.color= "red";
+        document.getElementById("hlo").style.fontSize= "50px";
+     }
+
+     ////////////////// LOOPS JAVASCRIPT ////////////////////
+    
+    //  for (let a=1;a<=10;a++){
+    //     document.write(a+"<br>")
+    //  }
+
+
+
+    //  let b=2;
+     
+    //  while(b<=20){
+    //     document.write(b+"<br>")
+    //     b+=2;
+    //  }
+
+
+
+    //  let c=3;
+    //  do{
+    //     document.write(c+"<br>")
+    //     c+=3;
+    //  }
+    //  while(c<=30)
+
+
+
+    //  let sum=0;
+    //  for(a=1;a<=10;a++){
+    //     sum=sum+a;
+    //  }
+    //  document.write(sum+"<br>")
+
+
+
+    //  let sum=0;
+    //  for(a=2;a<=20;a+=2){
+    //     sum=sum+a;
+    //  }
+    //  document.write(sum+"<br>")
+
+
+
+    //  let m=1;
+    //  for(a=2;a<=20;a+=2){
+    //     m=m*a;
+    //  }
+    // document.write(m+"<br>")
+
+
+
+    // let a=1;
+    // while(a<=10){
+    //     document.write(a+"<br>")
+    //     a++;
+    // }
+
+
+
+    // let sum=0;
+    // let a=1;
+    // while(a<=10){
+    //     sum=sum+a;
+    //     a++;
+    // }
+    // document.write(sum+"<br>")
+
+
+
+    // let m=1;
+    // let a=1;
+    // while(a<=10){
+    //     m=m*a;
+    //     a++;
+    // }
+    // document.write(m+"<br>")
+
+
+
+    // let a=1;
+    // do{
+    //     document.write(a+"<br>")
+    //     a++;
+    // }
+    //   while(a<=10)
+
+
+
+    // let sum=0;
+    // let a=1;
+    // do{
+    //     sum=sum+a;
+    //     a++;
+
+    // }
+    // while(a<=10);
+    // document.write(sum+"<br>")
+
+
+
+    // let m=1;
+    // let a=1;
+    // do{
+    //     m=m*a;
+    //     a++;
+    // }
+    // while(a<=10);
+    // document.write(m+"br>")
+
+
+
+
+
+ //////////////////ARRAY JAVASCRIPT//////////////////////
+
+    // let name =["Tikam","Tony","Raghav"];
+    // document.write(name[2]+"<br>") 
+
+
+
+    // let names=["Tikam","Tony","Raghav"];
+    // for(let a=0;a<names.length;a++){
+    //     document.write(name[a]+"<br>")
+    // }
+
+
+
+    // let sum=0;
+    // let x=[1,2,5,8,9];
+    // for(let a=0;a<x.length;a++){
+    //     sum=sum+x[a];
+    // }
+    // document.write(sum+"<br>");
+
+
+
+    // let m=1;
+    // let a=[2,3,4,5,6];
+    // for(let b=0;b<a.length;b++){
+    //     m=m*a[b];
+    // }
+    // document.write(m+"<br>");
+
+
+
+
+    //////////////////OBJECT JAVASCRIPT//////////////////
+
+
+    // let car={
+    //     "Name" : "BMW",
+    //     "Modal": "X1",
+    //     "color" :"Blue",
+    //     "Tpye" : "SUV",
+    //     "years": "2015",
+    // }
+
+    // document.write(car.color);
+
+
+    /////////////DATA TYPE////////////////////
+
+    // let x = "Hello world";
+    // document.write(typeof(x)+"<br>");
+    
+
+    // let n= 24;
+    // document.write(typeof(n)+"<br>");
+
+    // let car =["bmw","audi","honda"];
+    // document.write(typeof(car)+"<br>");
+
+    // let y=true;
+    // document.write(typeof(y)+"<br>")
+
+    // let name = "tikam raghav";
+    // document.write(name.toUpperCase());
+
+  //  let name = "tikam raghav";
+   // document.write(name.toUpperCase());
+    
+
+
+
+    
+       </script>
+    
+</head>
+<body>
+     <h1 style="color: CORAL;">ARITHMATIC PROGRAMS</h1>
+    <h2>AREA OF CIRCLE</h2>
+    Enter the radius <input type="number" id="radius"> <br> <br>
+    <button onclick="area()">submit</button>
+    <h2 id="result"></h2>
+
+    <h2>VOLUME OF CONE</h2>
+    Enter the radius <input type="number" id="radius1"> <br> <br>
+    Enter the height <input type="number" id="height"> <br> <br>
+    <button onclick="volume()">submit</button>
+    <h2 id="result1"></h2>
+
+    <h1 style="color: coral;">CONDITIONAL STATEMENTS</h1>
+
+    <h2>CHECK EVEN ODD</h2>
+    Enter the number <input type="n  umber" id="num"> <br> <br>
+    <button onclick="evenodd()">submit</button>
+    <h2 id="result2"></h2>
+
+    <h2>CHECK LARGE NUMBER</h2>
+
+    Enter the number <input type="number" id="num1"> <br> <br>
+    Enter the number <input type="number" id="num2"> <br> <br>
+    <button onclick="large()">submit</button>
+    <h2 id="result3"></h2>
+
+    <h2>COMPANY INTERVIEW AGE ELIGIBLITY</h2>
+    Enter the age <input type="number" id="age"> <br><br>
+    <button onclick="age()">submit</button> 
+    <h2 id="result4"></h2>
+
+     <h1 style="color: coral;">DOM JAVASCRIPT</h1>
+
+     <h2 id="hlo">HELLO JAVASCRIPT</h2>
+     <button onclick="dom()">RED</button>
+
+
+     <h1 style="color: coral;">LOOPS JAVASCRIPT</h1>
+     
+     IT IS WRITTEN THE SCRIPT
+
+     <h1 style="color: coral;">ARRAY JAVASCRIPT</h1>
+
+     IT IS WRITTEN THE SCRIPT
+
+     <h1 style="color: coral;">OBJECT JAVASCRIPT</h1>
+
+     IT IS WRITTEN THE SCRIPT
+
+     <h1 style="color: coral;">DATA TYPE</h1>
+
+     IT IS WRITTEN THE SCRIPT
+
+
+
+
+
+     
+</body>
+</html>
