@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .logo img{
+        width: 260px;
+        height: 60px;
+    }
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 18px;
+        background-color: white;
+        padding: 0px 12px;
+        position: sticky;
+        top: 0;
+    }
+    .links{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+    .links button{
+        background-color: #f2643b;
+        border: none;
+        border-radius: 20px;
+        color: white;
+        width: 237px;
+        height: 50px;
+    }
+    .container{
+        background-image:  url('https://www.wafidbooking.com/admin/images/banner/86064833.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 541px;
+        background-position: center center;
+        border-radius: 20px;
+        padding-left: 40px;
+        padding-top: 100px;
+        box-shadow: 2px 2px 2px 2px rgb(212, 206, 206);
+        font-family: ;
+    }
+    .container h1{
+        font-size: 70px;
+    }
+    #para2 {
+        font-weight: bold;
+        font-size: 30px;
+    }
+    .examination{
+        position: absolute;
+        margin-top: -50px;
+        margin-left: 200px;
+        background-color: #edf2f5;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 300px;
+        border-radius: 20px;
+        padding: 25px;
+    }
+    .book button{
+        background-color: #f2643b;
+        color: white;
+        border-radius: 20px;
+        border: none;
+        width: 250px;
+        height: 40px;
+        margin-top: 30px;
+
+    }
+    .gcc{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 150px;
+        padding-bottom: 50px;
+        
+    }
+    .centres{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid black;
+        border-radius: 30px;
+        background-color: #edf2f4;
+        font-weight: bold;
+        line-height: 40px;
+        border: none;
+      
+    } 
+    .title{
+        background-color: #343434;
+        color: white;
+        border-radius: 20px 20px 0px 0px;
+        padding: 20px;
+        
+    }
+    .title h1{
+        font-size: 30px;
+    }
+    .list{
+        text-align: center;
+    }
+
+   
+</style>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="https://www.wafidbooking.com/admin/logo/2018881351.png" alt="">
+        </div>
+        <div class="links">
+          <a class="navbar-brand" href="#">Home</a>
+          
+          
+              <a class="nav-link active" aria-current="page" href="#">Terms&Conditions</a>
+              <a class="nav-link" href="#">Medical Centres List</a>
+              <a class="nav-link" href="#">Blog</a>
+              <a class="nav-link disabled" aria-disabled="true">Contact Us</a>
+              <button>Book An Appointment</button>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="container">
+        <h1>Welcome to Wafid</h1>
+        <p>Wafid is an individual seeking employment or residency in any of The Gulf Cooperation Council States.</p>
+        <p id="para2">We wish you good health and happiness.</p>
+      </div>
+      <div class="examination">
+        <div class="medical">
+            <h1>Medical Examinations</h1>
+            <p>Book your health check-up appointment or view your test results</p>
+        </div>
+        <div class="book">
+            <button>Book An Appointment</button>
+        </div>
+      </div>
+      <div class="gcc">
+        <div class="centres">
+            <div class="title">
+            <h1>GCC MEDICAL CENTRES</h1>
+        </div>
+            <div class="list">
+                <p>Saudi arabia medical Center</p>
+                <p>UAE medical Center</p>
+                <p>Bahrain Medical Center</p>
+                <p>Qatar Medical center</p>
+                <p>Kawait Medical center</p>
+                <p>Oman Medical center</p>
+            </div>
+        </div>
+      </div>
+      
+    
+</body>
+</html>
