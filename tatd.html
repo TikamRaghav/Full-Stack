@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .navbar{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            gap: 450px;
+            border-top: 5px solid #16588e;
+        }
+        .logo{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+        .logo img{
+            width: 34px;
+            height: 36px;
+        }
+        .tagline{
+            font-size: 8px;
+        }
+        .image{
+            font-size: 30px;
+        }
+        .back button{
+            padding: 6px;
+            border: 1px solid silver;
+        }
+        .shape{
+            width: 40px;
+            height: 20px;
+            background-color: silver;
+            border: 1px solid silver;
+            border-radius: 50px;
+            display: flex;
+            align-items: center;
+            padding: 3px;
+        }
+        .circle{
+            border: 1px solid white;
+            background-color: white;
+            border-radius: 100px;
+            width: 15px;
+            height: 15px;
+        }
+        .driver{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-top: 50px;
+            flex-direction: column;
+            gap: 200px;
+        }
+        .premium{
+            display: flex;
+            align-items: center;
+            gap: 150px;
+            border: 1px solid silver;
+            border-radius: 10px;
+            padding: 10px;
+            font-size: 10px;
+
+        }
+        .pic img{
+            width: 30px;
+         
+        }
+        .pic{
+            display: flex;
+            gap: 20px;
+            align-items: center;
+
+        }
+        .payment{
+            width: 400px;
+          
+
+        }
+        .payment p{
+            font-size: 10px;
+        }
+        .gst{
+            text-align: right;
+            margin-left: 150px;
+           
+        }
+        .cash{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .options{
+            display: flex;
+            justify-content: space-between;
+            
+        }
+        .paycash{
+            display: flex;
+            gap:    10px;
+        }
+        #book{
+            width: 370px;
+            height: 30px;
+            border-radius: 30px;
+            border: none;
+            background-image: linear-gradient(to right, navy, rgb(12, 153, 204));
+            color: white;
+        }
+       
+        .book{
+         
+            border: 1px solid silver;
+            box-shadow: 2px 3px 4px 4px silver;
+        }
+        .cancel{
+            background-color: silver;
+        }
+        .container{
+            padding: 10px;
+        }
+        .container div{
+            padding-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <div class="image">
+            <img src="https://www.tatd.in/img/logo/bluelogo.png" alt=""> tat d
+            </div>
+            <div class="tagline">
+                <p>trusted & trained driver</p>
+            </div>
+        </div>
+        <div class="back">
+            <button>Back</button>
+        </div>
+    </div>
+    <div class="driver">
+        <div class="premium">
+        <div class="pic">
+            <img src="https://www.tatd.in/icons_files/driver_icon_1.jpg" alt="">
+            <div class="content">
+                <h4>Premium Driver</h4>
+                <p>For luxurious and reliable experience</p>
+            </div>
+        </div>
+        <div class="toggle">
+            <div class="shape">
+                <div class="circle"></div>
+            </div>
+        </div>
+        </div>
+        <div class="payment">
+            <div class="gst">
+            <p>+ Add GST details to get 5% Input </p>
+             <p>   + Add your email to receive Driver Background Report</p>
+            </div>
+            <div class="book">
+                <div class="cancel">
+                <p>Free cancellation up to 1 hour before scheduled time; otherwise cancellation of 100 Rs will applies to block driver schedule.</p></div>
+                <div class="container">
+                <div class="options">
+                    <h4>Payment options</h4>
+                    <button>Back</button>
+                </div>
+                <div class="cash">
+                    <div class="paycash">
+                    <input type="radio">
+                    <div class="cash2">
+                    
+                        <h4>Pay Cash</h4>
+                        <p>Pay at the end of Trip</p>
+                    </div>
+                    
+                </div>
+                <div class="price">
+                    ₹ 4450
+                </div>
+
+            </div>
+            <div class="cash">
+                <div class="paycash">
+                <input type="radio">
+                <div class="cash2">
+                
+                    <h4>Pay Online</h4>
+                    <p>Make full payment now</p>
+                </div>
+                
+            </div>
+            <div class="price">
+                ₹ 4450
+            </div>
+
+        </div>
+        <button id="book">Book Now </button>
+        </div>
+        </div>
+    </div>
+  
+    
+</body>
+</html>
